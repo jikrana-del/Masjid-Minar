@@ -69,7 +69,6 @@ function Marble_Mimber_order() {
                                             to={`/${makeSlug('rcc minar')}`}
                                             className={`${style.contain} flex`}
                                             data-aos="fade-up"
-                                            // onClick={() => HendelMarbleMimberData(idx, item.title)}
                                         >
                                             <div className={`${style.contain} flex`} data-aos="fade-up">
                                                 <img src={item.img} alt="" style={{ borderRadius: "10px" }} />

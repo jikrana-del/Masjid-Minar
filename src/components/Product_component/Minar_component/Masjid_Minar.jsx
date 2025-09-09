@@ -1,5 +1,4 @@
 import style from '../../../css/Minar.module.css'
-import gumbad from '../images/Gumbad.png'
 import { NavLink } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Pagination from '@mui/material/Pagination';
@@ -39,9 +38,9 @@ function Masjid_Minar() {
     const makeSlug = (title) => {
         return title
             .toLowerCase()
-            .replace(/\s+/g, '-')   // spaces → dash
-            .replace(/:/g, '')      // remove colon
-            .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
+            .replace(/\s+/g, '-')  
+            .replace(/:/g, '')     
+            .replace(/[^a-z0-9-]/g, ''); 
     };
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 9;

@@ -130,13 +130,13 @@ function Product() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // animation duration
-      once: false      // repeat animation on every scroll
+      duration: 1000, 
+      once: false     
     });
   }, []);
 
   useEffect(() => {
-    AOS.refresh();     // required for React route changes
+    AOS.refresh();     
   }, []);
   return (
     <>

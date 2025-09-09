@@ -31,13 +31,13 @@ function Gallery_Datail() {
                 <div className={`${style.minar} flex max-width`}>
                     <div className={style.img_zoom} style={{ flex: "1 1 400px", maxWidth: "600px" }}>
                         <InnerImageZoom
-                            src={FinalData.img}          // normal image
-                            zoomSrc={FinalData.img} // high-res image for zoom
-                            zoomPreload={true} // zoom image pehle load ho jayegi
+                            src={FinalData.img}          
+                            zoomSrc={FinalData.img} 
+                            zoomPreload={true} 
                             width='400px'
                             height='auto'
                             zoomScale={4}
-                            zoomType="hover"  // hover ya click use kar sakte ho
+                            zoomType="hover"  
                             className='animate__zoomIn  animate__animated zoomImg'
                         />
                     </div>
@@ -64,7 +64,6 @@ function Gallery_Datail() {
                                             {item.text}
                                         </a>
                                     ) : (
-                                        // agar normal text hai to direct render karo
                                         item.text
 
                                     )}

@@ -14,7 +14,6 @@ import Gumbad from './components/Product_component/Gumbad.jsx';
 import Marble_minar from './components/Product_component/Marble_Minar_components/Marble_minar.jsx'
 import Minar_gallery from './components/Product_component/Gallery_component/Minar_gallery.jsx';
 import Minar from './components/Product_component/Minar_component/Minar.jsx'
-import Musalla_tiles from './components/Product_component/Musalla_tiles.jsx'
 import Parapet_jali from './components/Product_component/Parapet_jali_components/Parapet_jali.jsx'
 import RCC_minar from './components/Product_component/RCC_Mimber_Component/RCC_minar.jsx'
 import FEET_2 from './components/Product_component/Minar_component/MinarSize.jsx';
@@ -52,7 +51,6 @@ const router = createBrowserRouter([
           { path: 'rcc-minar', element: <RCC_minar /> },
           { path: 'gumbad', element: <Gumbad /> },
           { path: 'masjid-rcc-minar', element: <Minar /> },
-          { path: 'musalla_tiles', element: <Musalla_tiles /> },
           { path: 'parapet_jali', element: <Parapet_jali /> },
           { path: 'minar/:feet', element: <FEET_2 /> },
           { path: 'parapet-jali/:slug', element: <Parapet_Jali_Detaill /> },
@@ -80,7 +78,8 @@ const router = createBrowserRouter([
 
     ]
   },
-]);
+],
+);
 createRoot(document.getElementById('root')).render(
   <Provider store={DataStore}>
 

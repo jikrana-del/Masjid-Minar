@@ -19,14 +19,13 @@ function Marble_minar() {
   const makeSlug = (title) => {
     return title
       .toLowerCase()
-      .replace(/\s+/g, '-')   // spaces → dash
-      .replace(/:/g, '')      // remove colon
-      .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
+      .replace(/\s+/g, '-')   
+      .replace(/:/g, '')     
+      .replace(/[^a-z0-9-]/g, ''); 
   };
   const HendelData  = (index , title)=>{
 const FilterData = All_Marble_Minar_Data.filter(item => item.title === title);
 console.log(FilterData);
-    // dispatch(uniqeParapetAction.uniqeParapetData(FilterData))
     dispatch(UniqeMarbleMinarAction.UniqeMarbleMinar(FilterData))
 
 

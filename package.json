@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jikrana-del.github.io/Masjid-Minar",
   "name": "masjid-minar",
   "private": true,
   "version": "0.0.0",
@@ -8,6 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

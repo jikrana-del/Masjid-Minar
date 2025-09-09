@@ -14,7 +14,6 @@ function Parapet_jali() {
   const All_Parapet_Data = useSelector(store => store.AllParapetJali);
   console.log(All_Parapet_Data);
   const HendelData = (index, title) => {
-    // console.log(All_Parapet_Data[index]);
     const FilterData = All_Parapet_Data.filter(item => item.title === title)
     dispatch(uniqeParapetAction.uniqeParapetData(FilterData));
   }
@@ -22,9 +21,9 @@ function Parapet_jali() {
   const makeSlug = (title) => {
     return title
       .toLowerCase()
-      .replace(/\s+/g, '-')   // spaces → dash
-      .replace(/:/g, '')      // remove colon
-      .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
+      .replace(/\s+/g, '-')   
+      .replace(/:/g, '')      
+      .replace(/[^a-z0-9-]/g, ''); 
   };
      const HendelParapet = ( title) => {
           const filterParapetData = All_Parapet_Data.filter(item => item.title == title)

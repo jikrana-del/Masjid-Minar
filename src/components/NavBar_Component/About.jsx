@@ -3,7 +3,6 @@ import { ChevronRight } from "lucide-react";
 import { useState } from 'react';
 import CountUp from 'react-countup';
 import 'animate.css';
-import { FaArrowUp } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
 function About() {

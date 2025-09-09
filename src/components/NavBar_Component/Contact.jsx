@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import style from '../../css/Contact.module.css'
 import { FaAngleLeft } from "react-icons/fa6";
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function Contact() {
   const navigate = useNavigate()

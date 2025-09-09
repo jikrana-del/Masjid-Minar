@@ -27,11 +27,11 @@ function Gumbad() {
         <div className={`${style.minar} flex max-width`}>
           <div className={style.img_zoom}>
             <InnerImageZoom
-              src={gumbad}          // normal image
-              zoomSrc={gumbad} // high-res image for zoom
-              zoomPreload={true} // zoom image pehle load ho jayegi
+              src={gumbad}         
+              zoomSrc={gumbad} 
+              zoomPreload={true} 
               width='250px'
-              zoomType="hover"  // hover ya click use kar sakte ho
+              zoomType="hover"  
               className='animate__zoomIn animate__animated'
             />
           </div>
@@ -45,7 +45,6 @@ function Gumbad() {
               <a href="https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local">  <span>Harmain Traders </span></a> 
               offer this <strong>Gumbad</strong> at the most competitive prices to the clients. We also caterers different products like
 
-                           {/* <strong>have been the quickest growing, Consumer-centric, and  <a href="https://en.wikipedia.org/wiki/ISO_9000_family"><span>ISO- certified company </span></a> since 1983 in Manufacturer  <NavLink to='/masjid-rcc-minar'> <span>ready-made RCC Minars for masjids </span> </NavLink> across India.</strong> We are providing a wide range of <strong>Wuzu Stand </strong>to our Clients. an exclusive collection of our offered range of products is acclaimed by the clients for its traditional looks as well as outstanding finishing. Being  one of one prominent <strong>manufacturers </strong>and <strong>suppliers</strong>, we male use of superior quality material for designing. <strong>Wuzu Stand </strong>are also customized,according to the client's needs at affordable rates. We also caterers different products Like */}
                           <NavLink to='/product/masjid-rcc-minar'> <span> Minars</span> </NavLink>  , <NavLink to='/product/gumbad'><span>Gumbad</span></NavLink>  , <NavLink to='/product/marble_minar'><span>Marble , Wuzu Stand</span></NavLink> , <NavLink to='/product/parapet_jali'> <span>Parapet jali</span></NavLink> And, <NavLink to={`/product/${makeSlug('rcc minar')}`}> <span>RCC Mimdber</span></NavLink>
             
                         </p>

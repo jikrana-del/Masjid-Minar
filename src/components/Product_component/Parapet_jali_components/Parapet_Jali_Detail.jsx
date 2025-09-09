@@ -32,18 +32,17 @@ function Parapet_Jali_Detail() {
                 <div className={`${style.minar} flex max-width`}>
                     <div className={style.img_zoom}>
                         <InnerImageZoom
-                            src={FinalData.img}          // normal image
-                            zoomSrc={FinalData.img} // high-res image for zoom
-                            zoomPreload={true} // zoom image pehle load ho jayegi
+                            src={FinalData.img}       
+                            zoomSrc={FinalData.img} 
+                            zoomPreload={true} 
                             width='250px'
-                            zoomType="hover"  // hover ya click use kar sakte ho
+                            zoomType="hover"  
                             zoomScale={4}
                             className='animate__zoomIn animate__animated'
                         />
                     </div>
                     <div className={`${style.minar_feet_contain} flex animate__zoomIn  animate__animated`}>
                         <h1>{FinalData.title}</h1>
-                        {/* <div className='hr'></div>descreiption */}
                         <p>
                             {FinalData.description.map((item, index) => (
                                 <span key={index} style={{ color:"black", fontSize: "18px" }}>
@@ -63,7 +62,6 @@ function Parapet_Jali_Detail() {
                                             {item.text}
                                         </a>
                                     ) : (
-                                        // agar normal text hai to direct render karo
                                         item.text
 
                                     )}

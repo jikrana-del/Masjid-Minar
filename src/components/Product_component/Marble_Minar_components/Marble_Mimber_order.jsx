@@ -22,9 +22,9 @@ function Marble_Mimber_order() {
     const makeSlug = (title) => {
         return title
             .toLowerCase()
-            .replace(/\s+/g, '-')   // spaces → dash
-            .replace(/:/g, '')      // remove colon
-            .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
+            .replace(/\s+/g, '-')   
+            .replace(/:/g, '')      
+            .replace(/[^a-z0-9-]/g, ''); 
     };
     const { Marble } = useParams()
     const HendelMarbleMinar = (index) =>{
