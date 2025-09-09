@@ -1,0 +1,309 @@
+.hero_section {
+    background-image: url('/Hero_images/background-hero.webp');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 100%;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+.hero_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 28, 31, 0.612);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero_section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+}
+
+.contain_section {
+    margin: 20px auto 50px;
+    padding: 20px 0;
+    z-index: 1;
+    color: #fff;
+    position: relative;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.contain_section p span {
+    color: #2EA3F2;
+    font-weight: 700;
+}
+
+.contain_section img {
+    width: 400px;
+}
+
+.inner_contain {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inner_contain h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.inner_contain h1 span {
+    border-bottom: 2px solid #EDE031;
+
+}
+
+.inner_contain p {
+    font-size: 16px;
+    margin: 20px 0;
+
+}
+
+
+.hero_btn {
+    background: linear-gradient(135deg, #001c1e, #25d8fc, #055d65, #25d8fc, #001c1e);
+    background: linear-gradient(135deg, #001c1e, #055d65, #25d8fc, #055d65, #001c1e);
+    color: #fff;
+    padding: 10px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 6px 18px rgba(8, 148, 180, 0.45);
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.hero_btn:hover {
+    background: linear-gradient(135deg, #001c1e, #055d65, #25d8fc, #055d65, #001c1e);
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 25px rgba(125, 231, 255, 0.5);
+}
+
+/* Active (click) */
+.hero_btn:active {
+    transform: scale(0.96);
+    box-shadow: 0 5px 15px rgba(8, 148, 180, 0.45);
+}
+
+/* Extra glow effect on hover */
+.hero_btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-30deg);
+    transition: 0.5s;
+}
+
+.hero_btn:hover::after {
+    left: 110%;
+}
+
+/* icon */
+.icon {
+    background-color: #25d8fc;
+    background: linear-gradient(135deg, #001c1e, #055d65, #25d8fc, #055d65, #001c1e);
+
+    position: absolute;
+    top: 50%;
+    padding: 4px 0 0 0;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.icon:hover {
+    background: linear-gradient(135deg, #001c1e, #055d65, #25d8fc, #055d65, #001c1e);
+    box-shadow: 0 0 40px rgb(10, 169, 209);
+
+}
+
+.left {
+    right: 30px;
+}
+
+.right {
+    left: 30px;
+}
+
+/* product section */
+.product_section {
+    background-color: #F3F7F7;
+    padding: 50px 10px;
+}
+
+.product_section p {
+    font-weight: 600;
+    color: #0000009e;
+    max-width: 50rem;
+}
+
+.product_contain {
+    justify-content: space-between;
+}
+
+.product_contain h2 {
+    font-weight: 900;
+    margin: 20px 0;
+    font-size: 45px;
+}
+
+.products_card {
+    padding: 50px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.products_card img {
+    width: 250px;
+    height: 350px;
+    border-radius: 9px;
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.products_card img:hover {
+    scale: 1.05;
+}
+
+/* contact_section */
+.contact_section {
+    background-image: url('../assets/bg20-img.jpg');
+    color: #fff;
+    text-align: center;
+    padding: 60px 10px;
+}
+
+.contact_section h1 {
+    font-weight: 900;
+}
+
+.contact_section p {
+    font-size: 20px;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: #27aab3; */
+}
+
+.social_icons a {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social_icons span {
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+}
+
+/* Official Brand Background Colors */
+.facebook {
+    background-color: #1877F2;
+}
+
+.x {
+    background: #000000;
+    color: #fff;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* Insta Gradient */
+.linkedin {
+    background: #0A66C2;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+/* Hover Effect */
+.social_icons a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width :769px) {
+    .contain_section {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .contain_section img {
+        width: 250px;
+    }
+
+    .inner_contain {
+        align-items: center;
+
+    }
+
+    .contact_section p {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:426px) {
+    .product_contain {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .contain_section img {
+        width: 200px;
+    }
+
+    .product_contain h2 {
+
+        font-size: 28px;
+    }
+
+    .hero_btn {
+        margin-bottom: 25px;
+    }
+
+}

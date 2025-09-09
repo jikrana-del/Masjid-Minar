@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif !important;
+}
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.green_btn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-weight: 600;
+    cursor: pointer;
+    background-image: url(./assets/bg20-img.jpg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    position: relative;
+    color: #fff;
+
+}
+
+.btn_high {
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-in-out;
+color: #fff !important;
+}
+
+button:hover .btn_show {
+    left: 94%;
+    opacity: 1;
+    color: #fff !important;
+}
+
+.active {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.max-width {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 10px 0;
+    width: 100%;
+    height: 20px;
+}
+
+.top_icon {
+    position: absolute;
+    left: 88%;
+    top: -100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(1, 88, 1);
+}
+
+.top_icon {
+    color: yellow !important;
+}
+
+body.dark {
+    background-color: #0000005b;
+    background-color: #000;
+}
+
+body.light {
+    background-color: #fff;
+}
+
+video {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 6px;
+    background: radial-gradient(circle, rgba(82, 76, 82, 1) 0%, rgba(54, 68, 75, 1) 0%, rgba(23, 137, 143, 1) 29%, rgba(42, 161, 191, 1) 46%, rgba(19, 59, 67, 1) 100%, rgba(6, 55, 64, 1) 100%);
+}
+
+
+@media (max-width:376px) {
+    .green_btn {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+   }

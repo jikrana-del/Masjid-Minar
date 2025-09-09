@@ -1,0 +1,143 @@
+.hero_contact {
+    background-image: url(../assets/bg20-img.jpg);
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contain {
+    color: #fff;
+    flex-direction: column;
+    height: 100%;
+}
+
+.contain h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+/* contain-section */
+.contain_section {
+    margin: 90px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+
+}
+
+.contain_section p {
+    font-size: 15px;
+}
+
+.form_section {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form_section input,
+.form_section textarea {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 8px;
+    outline: none;
+    background: none;
+    
+        background-color: #eeeeeee1;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form_section input:focus,
+.form_section textarea:focus {
+    border: 1px solid #09b1bd;
+    box-shadow: 0 0 6px rgba(9, 177, 189, 0.4);
+}
+
+.form_section textarea {
+    width: 96%;
+    height: 100px;
+}
+
+.input_contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.input_contain span {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.input_contain span input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.form_section button {
+    border-radius: 7px;
+    background:
+        linear-gradient(135deg,
+            rgba(0, 28, 30, 0.8),
+            rgba(5, 93, 101, 0.6),
+            rgba(37, 216, 252, 0.4),
+            rgba(5, 93, 101, 0.6),
+            rgba(0, 28, 30, 0.8)),
+        url(../assets/bg20-img.jpg);
+    color: #fff;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.address_contain {
+    padding: 10px;
+}
+
+.address_contain h2 {
+    width: 260px;
+    padding: 0 0 20px;
+    border-bottom: 2px solid #7BC1FF;
+    font-weight: 900;
+}
+
+.address_contain p {
+    margin: 20px 0;
+}
+
+.errors {
+    color: red;
+
+}
+@media(max-width:786px){
+    .contain_section{
+        flex-direction: column;
+    }
+    .contain h1{
+        font-size: 40px;
+    }
+}
+
+@media(max-width:600px) {
+    .form_section {
+        width: 100%;
+    }
+
+    .input_contain {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    .input_contain input {
+        width: 100%;
+    }
+}

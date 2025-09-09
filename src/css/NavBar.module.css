@@ -1,0 +1,250 @@
+.nav_section {
+    height: 72px;
+}
+
+.nav_containar {
+    background-color:#fff;
+    top: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    padding: 15px 10px 10px 10px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.nav {
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1250px;
+    gap: 25px;
+}
+
+li {
+    list-style: none;
+
+}
+
+.nav_link {
+    gap: 25px;
+   
+}
+
+.nav_link>li {
+    position: relative;
+    padding-right: 12px;
+    border-right: 2px solid rgba(0, 0, 0, 0.126);
+   
+}
+.nav_link ul  li:hover{
+    background-color: #ededed;
+}
+
+.nav_link > li> a{
+    font-size: 18px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav_link li ul {
+    position: absolute;
+
+}
+
+.menu {
+    display: none;
+}
+
+.work {
+    display: none;
+    background-color: #fff;
+    width: 180px;
+    padding: 20px;
+    text-align: center;
+}
+
+.work li {
+    margin-top: 10px;
+
+}
+
+.work li a {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product {
+    border-top: 3px solid #2ea3f2;
+    width: 240px;
+    font-size: 14px;
+    display: none;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.product li {
+    margin: 5px 0;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+    border-radius: 5px;
+    left: 0;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+.product>li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    width: 100%;
+
+}
+
+.product li a {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.7;
+}
+
+.product_coman_style {
+    border-top: 3px solid #2ea3f2;
+    display: none;
+    background-color: #fff;
+    z-index: 20;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.minar {
+    right: -211px;
+    top: -7px;
+
+    height: 500px;
+    overflow-y: scroll;
+
+}
+
+.minar li {
+    padding: 5px 20px;
+}
+
+.gallery {
+    right: -274px;
+    top: -10px;
+    padding-right: 5px;
+}
+
+.parapet {
+    right: -233px;
+    top: -20px;
+    padding-right: 10px;
+}
+
+.marble {
+    right: -239px;
+    padding-right: 10px;
+    top: 0px;
+}
+
+@media(min-width:1023px) {
+    li:hover>ul {
+        display: block;
+    }
+}
+
+@media(max-width:1025px) {
+    .minar {
+        overflow: hidden;
+    }
+
+    .nav_containar {
+        padding: 10px 20px;
+     background-color: #fff;
+    }
+
+    .nav_link {
+        position: absolute;
+        flex-direction: column;
+        width: 90%;
+       left: 5%;
+        border-top: 3px solid #2ea3f2;
+        max-height: 400px;
+        overflow-y: scroll;
+        transition: top 0.4s ease-in-out;
+        z-index: 999;
+        top: -700px;
+        padding: 10px;
+        background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .minar{
+        height: auto;
+    }
+
+    .nav_link>li {
+        margin: 10px;
+    }
+
+    .nav_link li ul {
+        position: relative;
+        width: 100%;
+        border: none;
+        left: 0;
+        box-shadow: none;
+    }
+
+    .nav_link a {
+     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 7px;
+        border-radius: 5px;
+
+        width: 100%;
+    }
+.nav_link a:hover{
+    background-color: #e9e9e9;
+}
+    .nav_link li {
+        border: none;
+             
+    }
+
+
+    .navbar_btn {
+        display: none;
+        background-color: #2ea3f2;
+    }
+    .nav_link ul {
+        padding: 5px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .show {
+    display: block;
+  
+    }
+    .drop_icon{
+        background-color: #efefef;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    .parapet , .gallery{
+        margin-top: 15px;
+    }
+
+    .display {
+  display: block;
+  top: 85px;
+    }
+}
