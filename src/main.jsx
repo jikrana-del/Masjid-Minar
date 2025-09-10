@@ -35,7 +35,7 @@ import Musalla_Tiles_order from './components/Product_component/Musalla_Tiles_co
 createRoot(document.getElementById('root')).render(
   <Provider store={DataStore}>
     <StrictMode>
-      <BrowserRouter basename={import.meta.env.PROD ? "/Masjid-Minar/" : "/"}>
+      <BrowserRouter basename={import.meta.env.PROD ? "/Masjid-Minar/" : ""}>
         <Routes>
           <Route path="/" element={<App />}>
             <Route index element={<Logo />} />
@@ -68,6 +68,7 @@ createRoot(document.getElementById('root')).render(
             </Route>
             <Route path="category/:blog" element={<Blog />} />
             <Route path="best-masjid-minar-manufacture" element={<Best_Manufacturer />} />
+            <Route path="*" element={<Logo />} />
           </Route>
         </Routes>
       </BrowserRouter>
