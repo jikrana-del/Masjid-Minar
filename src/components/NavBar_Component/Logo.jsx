@@ -27,25 +27,26 @@ function Logo() {
     {
       id: 0,
       title: 'Masjid Minar Manufacturer',
-      img: '/Hero_images/hero-1.png',
+      img: 'Hero_images/hero-1.png',
+      // img: `${import.meta.env.BASE_URL}Hero_images/hero-1.png`,
       description: 'All Type of RCC Minar | ReadyMade Minar | Long and Strong Minar| Lighting Minar All Type Minar and sizes are ready to supply All Over India '
     },
     {
       id: 1,
       title: 'Aman Gumbad',
-      img: '/Hero_images/hero-2.png',
+      img: 'Hero_images/hero-2.png',
       description: 'Good quality Rcc Gumbad & RCC construction services and concrete products in large quantity to the construction industry to ensure timely completion of the project.'
     },
     {
       id: 2,
       title: 'Aman Parapate Jali',
-      img: '/Hero_images/hero-3.png',
+      img: 'Hero_images/hero-3.png',
       description: 'Good quality of parapet Jali Avaliabe ,small parapet | Big parapet | shahi Boundary | parapet Boundary Wall, etc. Avaliable in Large quantity.'
     },
     {
       id: 3,
       title: 'Marble Products',
-      img: '/Hero_images/hero-4.png',
+      img: 'Hero_images/hero-4.png',
       description: 'All Kind of Marble Product used in Masjid Like Marble Wuzu Stand, Marble Mimber , Marble Mehrab , Marble Jali for Dargah , Marble parapet Jali , etc. ALl over India Delivery Avaliable.'
     }
   ]
@@ -56,7 +57,6 @@ function Logo() {
     else {
       setCount(count - 1);
     }
-    console.log(count);
   }
   const HendelRight = (count) => {
     if (Products.length - 1 <= count) {
@@ -65,7 +65,6 @@ function Logo() {
     else {
       setCount(count + 1)
     }
-    console.log(count);
 
   }
   return (
@@ -83,7 +82,8 @@ function Logo() {
               transition={{ duration: 0.9 }}
               className='animate__animated'
             >
-              <img src={Products[count].img} alt="" />
+              <img src={`${import.meta.env.BASE_URL}${Products[count].img}`} alt={Products[count].title} />
+
             </motion.div>
             <motion.div key={count + "-text"}
               className={`${style.inner_contain}  hero `}

@@ -60,7 +60,7 @@ function Minar() {
               
               >
                 <div className={`${style.contain} flex`} data-aos="fade-up" >
-                  <img src={`/Minar_sizes_images/${img}`} alt="" title='Click Me' />
+                  <img src={`${import.meta.env.BASE_URL}Minar_sizes_images/${img}`} alt="" title='Click Me' />
                   <button>{MinarName[idx]}</button>
                 </div>
               </NavLink>

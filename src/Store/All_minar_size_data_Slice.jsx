@@ -472,7 +472,7 @@ export const MinarDataSlice = createSlice({
             id: 20,
             size: '42',
             title: '42 FEET MINAR',
-            img: '/Minar_sizes_images/42-feet-300x452 (1).jpg',
+            img: ` ${import.meta.env.BASE_URL}Minar_sizes_images/42-feet-300x452 (1).jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: ' are now an ' },
@@ -493,7 +493,7 @@ export const MinarDataSlice = createSlice({
             id: 21,
             size: '44',
             title: '44 FEET MINAR',
-            img: '/Minar_sizes_images/44-feet-aman-masjid-minar-300x454 (1).jpg',
+            img: `${import.meta.env.BASE_URL} Minar_sizes_images/44-feet-aman-masjid-minar-300x454 (1).jpg`,
             description: [
                 {
                     text:
@@ -508,7 +508,7 @@ export const MinarDataSlice = createSlice({
             id: 22,
             size: '50',
             title: '50 FEET MINAR',
-            img: '/Minar_sizes_images/50-feet-masjid-minar-300x452 (1).jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/50-feet-masjid-minar-300x452 (1).jpg`,
             description: [
                 {
                     text:
@@ -520,7 +520,7 @@ export const MinarDataSlice = createSlice({
             id: 22,
             size: '60',
             title: '60 FEET MINAR',
-            img: '/Minar_sizes_images/60-feet-300x458 (1).jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/60-feet-300x458 (1).jpg`,
             description: [
                 { text: <span>Harmain Traders</span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: 'had started in 1983 ever since been the quickest growing' },
@@ -542,7 +542,7 @@ export const MinarDataSlice = createSlice({
             id: 23,
             size: '70',
             title: '70 FEET MINAR',
-            img: '/Minar_sizes_images/70-feet-300x451 (1).jpg',
+            img: ` ${import.meta.env.BASE_URL}Minar_sizes_images/70-feet-300x451 (1).jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> trendy designed  <strong>70 Feet Minar </strong> has gained wide appreciation among our consumers since our inception in <strong>1983</strong>.The offered   </> },
@@ -564,7 +564,7 @@ export const MinarDataSlice = createSlice({
             id: 24,
             size: '90',
             title: '90 FEET MINAR',
-            img: '/Minar_sizes_images/90-feet-300x452 (1).jpg',
+            img: ` ${import.meta.env.BASE_URL}Minar_sizes_images/90-feet-300x452 (1).jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> have been the quickest growing </> },

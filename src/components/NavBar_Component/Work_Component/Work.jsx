@@ -59,7 +59,7 @@ const renderImages = (images ,imgName = name) => (
     images.map((img, idx) => (
       <div key={idx} className={style.images} style={{ position: "relative" }}>
         <img
-          src={`/images/${img}`}
+          src={`${import.meta.env.BASE_URL}images/${img}`}
           alt={`work-${idx + 1}`}
           width="200px"
           height="210px"
@@ -140,7 +140,7 @@ const renderImages = (images ,imgName = name) => (
 
 
             }}>
-            <img src={`/images/${selectedImg}`} alt="" style={{ borderRadius: "5px" }} width='100%' />
+              <img src={`${import.meta.env.BASE_URL}images/${selectedImg}`} alt="" style={{ borderRadius: "5px" }} width='100%' />
             <div className={style.close_icon} onClick={() => setSelectedImg(null)} >
               <X size={30} />
             </div>
