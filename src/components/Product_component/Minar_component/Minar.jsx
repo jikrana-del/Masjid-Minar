@@ -4,14 +4,8 @@ import { NavLink } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-// import { MinarDataAction } from '../../../Store/All_minar_size_data';
-import { uniqeDataAction } from '../../../Store/Uniqe_minar_data';
-import { uniqeParapetAction } from '../../../Store/uniqe_Parapet_Jali_slice';
-// import { useParams } from 'react-router-dom';
+
 function Minar() {
-  const dispatch = useDispatch();
-  const MinarData = useSelector(store => store.AllMinarData);
   const MinarSizeImg = [
     '2-feet-masjid-minar-300x452.jpg', '3.5-feet-masjid-minar-300x452.jpg', '5-feet-masjid-minar-300x455.jpg',
     '6-feet-masjid-minar-300x456.jpg', '8-feet-masjid-minar-300x451.jpg', '11-feet-masjid-minar-300x450.jpg',
@@ -31,14 +25,7 @@ function Minar() {
     '5 FEET MINAR', '3.5 FEET MINAR', '2 FEET MINAR']
   const MinarLink = [90, 70, 60, 50, 44, 42, 40, 35, 32, 30, 28, 25, 23, 22, '20-5', 18, 17, 16, 14, 12, 11, 8, 6, 5, '3-5', 2];
 
-  const HendelData = (index,title) => {
-    const FilterMinarData = MinarData.filter(item => item.title === title);
-    console.log(title);
-    
-    console.log(FilterMinarData);
-    
-    dispatch(uniqeDataAction.MinarUniqeData(FilterMinarData));
-  }
+ 
   useEffect(() => {
     AOS.init({
       duration: 1000, 
@@ -60,14 +47,18 @@ function Minar() {
             <div className='animate__fadeInRight animate__animated'>
               <h1>High Quality Minar</h1>
               <p>At Aman Minar <a href="https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local"> <strong>(Harmain Traders)</strong> </a> are Offering here the various types of Minar for use in various places as a decoration piece. it is available with us in a plethora of designs, colors, and finishes. Our adroit team of professionals design and <NavLink to='/category/:blog'> <strong>Construct these minars</strong>  </NavLink>using excellent quality reinforced concrete cement and pioneering techniques in adherence with trending designs of the market. It has Sturdy construction for long-lasting life; Resistance from all kinds of weather-able impacts. The minar is very effective and useful.</p>
+              <NavLink to='/contact'>
               <button>Contact - US</button>
+              </NavLink>
             </div>
           </div>
         </section>
         <section className={`${style.MinarSizeImg} flex max-width`} style={{ flexWrap: "wrap" }}>
           {MinarSizeImg.reverse().map((img, idx) => {
             return <div key={idx}>
-              <NavLink to={`/product/minar/${MinarLink[idx]}-feet`} onClick={() => HendelData(idx,MinarName[idx])}>
+              <NavLink to={`/product/minar/${MinarLink[idx]}-feet`}
+              
+              >
                 <div className={`${style.contain} flex`} data-aos="fade-up" >
                   <img src={`/Minar_sizes_images/${img}`} alt="" title='Click Me' />
                   <button>{MinarName[idx]}</button>

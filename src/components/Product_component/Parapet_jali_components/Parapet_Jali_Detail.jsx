@@ -8,23 +8,33 @@ import style from '../../../css/Minar.module.css'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 function Parapet_Jali_Detail() {
-    const Data = useSelector(store =>  store.uniqeParapetData);
-    const FinalData = Data && Data.length > 0 ? Data[0] : null;
-    console.log(Data);
-    
-    // const FinalData = Array.isArray(Data) ? Data[0] : Data;
-    
-    if(!FinalData){
-        return <center><h1>Data Not Found...</h1></center>
-    } 
+    const makeSlug = (title) => {
+        return title
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/:/g, '')
+            .replace(/[^a-z0-9-]/g, '');
+    };
+
     const { slug } = useParams();
+    const All_Parapet_Data = useSelector(store => store.AllParapetJali);
+    const FinalData = All_Parapet_Data?.find(
+        (item) => makeSlug(item.title) === slug
+    )
+    if (!FinalData) {
+        return (
+            <center style={{ margin: '40px 0' }}>
+                <h1>Data not found for "{slug}"</h1>
+            </center>
+        );
+    }
 
 
     return (
         <section key={FinalData.id}>
             <section className={`${style.Header}`}>
                 <div>
-                    <NavLink to ='/'> Home / </NavLink>
+                    <NavLink to='/'> Home / </NavLink>
                     <NavLink to={`/product-category/parapet/parapet-jali-order`}> parapet Jali / </NavLink>
                     {`  ${FinalData.title}`}</div>
             </section>
@@ -32,11 +42,11 @@ function Parapet_Jali_Detail() {
                 <div className={`${style.minar} flex max-width`}>
                     <div className={style.img_zoom}>
                         <InnerImageZoom
-                            src={FinalData.img}       
-                            zoomSrc={FinalData.img} 
-                            zoomPreload={true} 
+                            src={FinalData.img}
+                            zoomSrc={FinalData.img}
+                            zoomPreload={true}
                             width='250px'
-                            zoomType="hover"  
+                            zoomType="hover"
                             zoomScale={4}
                             className='animate__zoomIn animate__animated'
                         />
@@ -45,7 +55,7 @@ function Parapet_Jali_Detail() {
                         <h1>{FinalData.title}</h1>
                         <p>
                             {FinalData.description.map((item, index) => (
-                                <span key={index} style={{ color:"black", fontSize: "18px" }}>
+                                <span key={index} style={{ color: "black", fontSize: "18px" }}>
 
                                     {item.route ? (
                                         <NavLink to={item.route} className="text-blue-600 hover:underline">
@@ -68,7 +78,7 @@ function Parapet_Jali_Detail() {
 
                                 </span>
                             ))}
-                        </p>  
+                        </p>
                         <NavLink to='/inquiry'><button className={`green_btn  flex`} >
                             <span>Send Inquiry</span>
                             <span> <ChevronRight size={20} className=' btn_show  btn_high' /></span>

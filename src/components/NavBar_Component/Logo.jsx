@@ -15,13 +15,13 @@ function Logo() {
   const [count, setCount] = useState(0)
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // animation duration
-      once: false      // repeat animation on every scroll
+      duration: 1000,  
+      once: false      
     });
   }, []);
 
   useEffect(() => {
-    AOS.refresh();     // required for React route changes
+    AOS.refresh();     
   }, []);
   const Products = [
     {
@@ -135,7 +135,7 @@ function Logo() {
           </div>
           <div className={`${style.products_card} flex`}>
             {ProductS_Card_Images.map((card, idx) => {
-              return <div>
+              return <div key={idx}>
                 <div data-aos="fade-up">
                   <img src={`/Hero_images/${card}`} alt="" />
                 </div>

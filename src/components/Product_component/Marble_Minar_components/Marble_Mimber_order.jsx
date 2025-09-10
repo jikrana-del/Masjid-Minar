@@ -5,16 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../../css/Minar.module.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { FileText } from "lucide-react";
-import { UniqeMarbleMinarAction } from '../../../Store/Uniqe_Marble_Minar_Slice';
 function Marble_Mimber_order() {
-    const dispatch = useDispatch()
     const MarbleMinarImgData = useSelector(store => store.MarbleMinarImgData)
-    const AllMarbleMinarData = useSelector(store => store.AllMarbleMinarData);
-    console.log(AllMarbleMinarData);
     
-    console.log(MarbleMinarImgData);
     const [blog, setBlog] = useState(false);
 
     const [selectedData, setSelectedData] = useState(MarbleMinarImgData[0]);
@@ -30,12 +25,7 @@ function Marble_Mimber_order() {
     const HendelMarbleMinar = (index) =>{
       setSelectedData(MarbleMinarImgData[index]);
     }
-    const HendelMarbleMimberData = (index, title)=>{
-const FilterData = AllMarbleMinarData.filter(item => item.title === title);
-console.log(FilterData);
 
-dispatch(UniqeMarbleMinarAction.UniqeMarbleMinar(FilterData));
-    }
     return (
        <>
        <section  className={`${style.gallery_section} flex`}>
@@ -72,7 +62,8 @@ dispatch(UniqeMarbleMinarAction.UniqeMarbleMinar(FilterData));
                           <div className={`${style.gallery} flex animate__zoomIn animate__animated`} key={`${Math.random()}`}>
                               {selectedData.items.map((item, idx) => {
                                   return <div key={idx}>
-                                      <NavLink to={`/product/marble/${item.title}`}  className={`${style.contain} flex`} data-aos="fade-up" onClick={() => HendelMarbleMimberData(idx, item.title)}>
+                                      <NavLink to={`/product/marble/${makeSlug(item.title)}`}  className={`${style.contain} flex`} data-aos="fade-up"
+                                       >
                                           <div className={`${style.contain} flex`} data-aos="fade-up">
                                               <img src={item.img} alt="" style={{ borderRadius: "10px"}} />
                                               <button>{item.title}</button>

@@ -5,31 +5,19 @@ import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../../css/Minar.module.css'
-import { uniqeParapetAction } from '../../../Store/uniqe_Parapet_Jali_slice';
-import { UniqeGalleryDataAction } from '../../../Store/Uniqe_gallery_Data_Slice';
 import { FileText } from "lucide-react";
 function Minar_gallery() {
-  const dispatch = useDispatch();
   const Gallery_Img_Data = useSelector(store => store.GalleryData);
-  console.log(Gallery_Img_Data[0].category);
-  
-  const All_Gallery_Data = useSelector(store => store.AllGalleryData);
+
   const [selectedOption, setSelectedOption] = useState('');
 
   const [selectedData, setSelectedData] = useState(Gallery_Img_Data[0]);
   const [blog, setBlog] = useState(false);
-  console.log(selectedData);
 
   const HendelGallery = (index) => {
     setSelectedData(Gallery_Img_Data[index]);
   }
-  const option_the_gallery = ['Default sorting', 'Sort by popularity', 'Sort by average rating', 'Sort by latest', 'Sort by price: low to high', 'Sort by price: high to low'];
-  const HendelGalleryData = (index, title) => {
-    console.log(All_Gallery_Data[index]);
-    const filter_Gallery = All_Gallery_Data.filter(item => item.title === title)
-    dispatch(UniqeGalleryDataAction.UniqeGalleryData(filter_Gallery));
-    // dispatch(uniqeParapetAction.uniqeParapetData(filter_Gallery))
-  }
+  
   const makeSlug = (title) => {
     return title
       .toLowerCase()
@@ -43,13 +31,14 @@ function Minar_gallery() {
       <section className={`${style.gallery_section} flex`}>
         {!blog &&
           <section style={{ borderRight: "2px solid" }}>
-            <p style={{marginLeft:"90px"}} >
+            <p style={{ marginLeft: "90px" }} >
               <NavLink to='/'>Home / </NavLink>
               <span>Minar Gallery</span>
-              <h2 style={{fontWeight:"800",
-              margin:"20px 0"
+              <h2 style={{
+               
+               
               }}>Minar Gallery</h2>
-             </p>
+            </p>
             <div>
               <div className={`${style.gallery_title} flex`}>
                 <p>Showing all 10 results</p>
@@ -75,7 +64,8 @@ function Minar_gallery() {
                   {selectedData.items.map((item, idx) => {
                     return <div key={idx}>
                       <NavLink to={`/product/gallery/${makeSlug(item.title)}`}>
-                        <div className={`${style.gallery_contain}`} onClick={() => HendelGalleryData(idx, item.title)}>
+                        <div className={`${style.gallery_contain}`}
+                         >
                           <img src={item.img} alt="" />
                           <h5>{item.title}</h5>
                         </div>
@@ -93,10 +83,10 @@ function Minar_gallery() {
 
             onClick={() => setBlog(true)}
           >Blog &nbsp;
-             <FileText  />      
+            <FileText />
           </NavLink>
         </section>
-      
+
       </section>
     </>
   )

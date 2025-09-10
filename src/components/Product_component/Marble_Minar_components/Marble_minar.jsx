@@ -1,20 +1,12 @@
 import style from '../../../css/Minar.module.css'
-import gumbad from '../images/Gumbad.png'
 import { NavLink } from 'react-router-dom'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import { useDispatch, useSelector } from 'react-redux';
-import { UniqeMarbleMinarAction } from '../../../Store/Uniqe_Marble_Minar_Slice';
-import { uniqeParapetAction } from '../../../Store/uniqe_Parapet_Jali_slice';
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Marble_minar() {
   const Marble_Minar_and_wuzu_stand = ['Marble Mimber', 'Wuzu Stand', 'Masjid-Marble-Mehrab', 'Marble Jali for Dargah', 'Marble Qibla and Mimber']
 
-  const dispatch = useDispatch()
-  const All_Marble_Minar_Data = useSelector(store => store.AllMarbleMinarData);
-  console.log(All_Marble_Minar_Data);
-  
 
   const makeSlug = (title) => {
     return title
@@ -23,13 +15,7 @@ function Marble_minar() {
       .replace(/:/g, '')     
       .replace(/[^a-z0-9-]/g, ''); 
   };
-  const HendelData  = (index , title)=>{
-const FilterData = All_Marble_Minar_Data.filter(item => item.title === title);
-console.log(FilterData);
-    dispatch(UniqeMarbleMinarAction.UniqeMarbleMinar(FilterData))
 
-
-  }
 const Marble_Minar_Img = ['marble-mimber.jpg','harmain-traders-wuzu-stand.jpg','masjid-marble-mehrab.jpg','marble-jali-for-dargah.jpg','Marble-Qibla-and-member.jpg']
   return (
     <>
@@ -54,14 +40,17 @@ const Marble_Minar_Img = ['marble-mimber.jpg','harmain-traders-wuzu-stand.jpg','
                           transition={{ duration: 0.9 }}>
               <h1>Marble Mimber </h1>
               <p> <a href="https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local"><strong>Harmain Traders </strong> </a> are making All Type Marble Mimber & Wuzu Stand. Wuzu is the islamic Procedure for washing parts of body using water , typically in preparation for formal prayers. IT followers a Produces to wash hands, mouth, nostrils, arms, face, hair,ears and feet. The Marble Mimber & Wuzu Stand is made in various designs for use in the mosque and other islamic places.</p>
-              <button>Contact - US</button>
+              <NavLink to='/contact'>
+                <button>Contact - US</button>
+              </NavLink>
             </motion.div>
           </div>
         </section>
       <section className={`${style.MinarSizeImg} flex max-width`} >
                 {Marble_Minar_Img.map((img, idx) => {
                   return <div key={idx}>
-                    <NavLink to={`/product/marble/${makeSlug(Marble_Minar_and_wuzu_stand[idx])}`} onClick={() => HendelData(idx,Marble_Minar_and_wuzu_stand[idx])}>
+                    <NavLink to={`/product/marble/${makeSlug(Marble_Minar_and_wuzu_stand[idx])}`} 
+                    >
                       <div className={`${style.contain} flex`} data-aos="fade-up" >
                         <img src={`/Marble_mimber_images/${img}`} height='100px' alt="" title='Click Me'  />
                         <button>{Marble_Minar_and_wuzu_stand[idx]}</button>

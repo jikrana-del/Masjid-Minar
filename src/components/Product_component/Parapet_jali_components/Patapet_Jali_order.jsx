@@ -2,26 +2,22 @@
 import { useParams } from 'react-router-dom'
 
 import { NavLink } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
+import {  useSelector } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../../css/Minar.module.css'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react'
-import { uniqeParapetAction } from '../../../Store/uniqe_Parapet_Jali_slice';
+import {  useState } from 'react'
 import { FileText } from "lucide-react";
 
 function Patapet_Jali_order() {
     const makeSlug = (title) => {
         return title
             .toLowerCase()
-            .replace(/\s+/g, '-')   // spaces → dash
-            .replace(/:/g, '')      // remove colon
-            .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
+            .replace(/\s+/g, '-')   
+            .replace(/:/g, '')     
+            .replace(/[^a-z0-9-]/g, ''); 
     };
-    const dispatch = useDispatch();
     const ParapetImgData = useSelector(store => store.ParapetJAliImgData);
-    const AllPapetJaliData = useSelector(store => store.AllParapetJali);
     const [blog, setBlog] = useState(false);
 
     const [selectedData, setSelectedData] = useState(ParapetImgData[0]);
@@ -30,10 +26,6 @@ function Patapet_Jali_order() {
     const { parapet } = useParams();
     const HendelParapetJali = (index) => {
 setSelectedData(ParapetImgData[index])
-    }
-    const HendelParapetJaliData = (index , title)=>{
-        const FilterData = AllPapetJaliData.filter(item => item.title ===title )
-        dispatch(uniqeParapetAction.uniqeParapetData(FilterData));
     }
 
   return (
@@ -72,7 +64,8 @@ setSelectedData(ParapetImgData[index])
                           <div className={`${style.gallery} flex animate__zoomIn animate__animated`} key={`${Math.random()}`}>
                               {selectedData.items.map((item, idx) => {
                                   return <div key={idx}>
-                                      <NavLink to={`/product/parapet-jali/${makeSlug(item.title)}`} onClick={() => HendelParapetJaliData(idx, item.title)}>
+                                      <NavLink to={`/product/parapet-jali/${makeSlug(item.title)}`}
+                                       >
                                           <div className={`${style.contain} flex`} data-aos="fade-up">
                                               <img src={item.img} alt="" style={{ borderRadius: "10px"}} />
                                               <button>{item.title}</button>

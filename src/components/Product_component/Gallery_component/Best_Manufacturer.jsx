@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from '../../../css/Minar.module.css'
 import best_img from '../../../assets/mosque-minar-all2.jpg'

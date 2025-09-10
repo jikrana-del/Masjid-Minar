@@ -3,12 +3,10 @@ import { NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../../css/Minar.module.css'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { use, useEffect, useState } from 'react'
+import {  useState } from 'react'
 import { FileText } from "lucide-react";
 function Musalla_Tiles_order() {
-    const dispatch = useDispatch()
     const { musalla } = useParams();
     const [selectedOption, setSelectedOption] = useState('');
     const MusallaImgData = useSelector(store => store.MusallaImgData);
@@ -65,7 +63,6 @@ function Musalla_Tiles_order() {
                                             to={`/product/${makeSlug(item.title)}`}
                                             className={`${style.contain} flex`}
                                             data-aos="fade-up"
-                                        // onClick={() => HendelMarbleMimberData(idx, item.title)}
                                         >
                                             <div className={`${style.contain} flex`} data-aos="fade-up">
                                                 <img src={item.img} alt="" style={{ borderRadius: "10px" }} />

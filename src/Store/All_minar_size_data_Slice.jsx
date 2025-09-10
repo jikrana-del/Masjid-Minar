@@ -544,8 +544,8 @@ export const MinarDataSlice = createSlice({
             title: '70 FEET MINAR',
             img: '/Minar_sizes_images/70-feet-300x451 (1).jpg',
             description: [
-                { text: <span>Harmain Traders</span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
-                { text: <>trendy designed  <strong>70 Feet Minar </strong> has gained wide appreciation among our consumers since our inception in <strong>1983</strong>.The offered   </> },
+                { text: <span>Harmain Traders </span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
+                { text: <> trendy designed  <strong>70 Feet Minar </strong> has gained wide appreciation among our consumers since our inception in <strong>1983</strong>.The offered   </> },
                 { text: <span> <strong> ready-made RCC Minars for masjids </strong></span>, type: 'span', route: '/masjid-rcc-minar' },
                 { text: 'is exclusively designed and constructed under the supervision of our adroit professionals with the help of advanced techniques and pristine quality reinforced concrete cement. This' },
                 { text: <span> <strong> ready-made RCC Minars for masjids </strong></span>, type: 'span', route: '/masjid-rcc-minar' },

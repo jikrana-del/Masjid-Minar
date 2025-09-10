@@ -28,7 +28,6 @@ const itemsList = [
     { id: 24, size: '3-5', title: '3.5 FEET MINAR', img: '/Minar_sizes_images/3.5-feet-masjid-minar-300x452.jpg' },
     { id: 25, size: 2, title: '2 FEET MINAR', img: '/Minar_sizes_images/2-feet-masjid-minar-300x452.jpg' }
 ]
-console.log(itemsList);
 
 export const MinarImgSlice = createSlice({
     name: 'MinarImg',

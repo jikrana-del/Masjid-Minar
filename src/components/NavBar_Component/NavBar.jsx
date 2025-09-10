@@ -1,17 +1,13 @@
 
 import s from '../../css/NavBar.module.css'
 
-import  { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../../assets/harmain-minar-logo.jpeg'
-import { ChartNoAxesColumn, ChevronDown, ChevronRight, Menu } from "lucide-react";
+import { ChevronDown, ChevronRight, Menu } from "lucide-react";
 import { IoIosArrowUp } from "react-icons/io";
-import { useDispatch, useSelector } from 'react-redux';
-import { uniqeDataAction } from '../../Store/Uniqe_minar_data';
-import { UniqeGalleryDataAction } from '../../Store/Uniqe_gallery_Data_Slice';
-import { uniqeParapetAction } from '../../Store/uniqe_Parapet_Jali_slice';
+
 import { IoMdClose } from "react-icons/io";
-import { UniqeMarbleMinarAction } from '../../Store/Uniqe_Marble_Minar_Slice';
 function NavBar() {
     const [openMenu, setOpenMenu] = useState(false)
     const [openSubMenu, setOpenSubMenu] = useState({
@@ -34,7 +30,7 @@ function NavBar() {
                     parapet: false,
                     marble: false,
                 });
-                setOpenMenu(false); 
+                setOpenMenu(false);
             }
         };
 
@@ -49,11 +45,7 @@ function NavBar() {
             .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
     };
 
-    const dispatch = useDispatch()
-    const MinarData = useSelector(store => store.AllMinarData);
-    const All_Gallery_Data = useSelector(store => store.AllGalleryData);
-    const All_Parapet_Data = useSelector(store => store.AllParapetJali);
-    const All_Marble_Mimber = useSelector(store => store.AllMarbleMinarData)
+
 
     const MinarSize = ['90 FEET MINAR', '70 FEET MINAR', '60 FEET MINAR', '50 FEET MINAR', '44 FEET MINAR', '42 FEET MINAR', '40 FEET MINAR', '35 FEET MINAR', '32 FEET MINAR', '30 FEET MINAR', '28 FEET MINAR', '25 FEET MINAR', '23 FEET MINAR', '22 FEET MINAR', '20.5 FEET MINAR', '18 FEET MINAR', '17 FEET MINAR', '16 FEET MINAR', '14 FEET MINAR', '12 FEET MINAR', '11 FEET MINAR', '8 FEET MINAR', '6 FEET MINAR', '5 FEET MINAR', '3.5 FEET MINAR', '2 FEET MINAR']
     const MinarLink = [90, 70, 60, 50, 44, 42, 40, 35, 32, 30, 28, 25, 23, 22, '20-5', 18, 17, 16, 14, 12, 11, 8, 6, 5, '3-5', 2];
@@ -61,34 +53,6 @@ function NavBar() {
     const Parapet_Jali = ['Parapet Boundary Wall', 'Shahi Boundary', 'Small Parapet-Jali', 'Medium Size Parapet Jali', 'Parapet-Jali Design:1', 'Parapet-Jali Design:2', 'Parapet-Jali Design:3', 'Parapet-Jali Design:4', 'Parapet-Jali Design:5']
     const Marble_Minar_and_wuzu_stand = ['Marble Mimber', 'Wuzu Stand', 'Masjid-Marble-Mehrab', 'Marble Jali for Dargah', 'Marble Qibla and Mimber']
 
-
-    const HendelMinarSize = (index, title) => {
-        const FilterMinarData = MinarData.filter(item => item.title === title)
-        console.log(FilterMinarData);
-
-        dispatch(uniqeDataAction.MinarUniqeData(FilterMinarData))
-    }
-
-    const HendelGallery = (index, title) => {
-        const filterData = All_Gallery_Data.filter(item => item.title === title);
-        console.log(filterData);
-        dispatch(UniqeGalleryDataAction.UniqeGalleryData(filterData));
-    }
-
-    const HendelParapet = (index, title) => {
-        const filterParapetData = All_Parapet_Data.filter(item => item.title == title)
-        console.log(filterParapetData);
-        dispatch(uniqeParapetAction.uniqeParapetData(filterParapetData))
-    }
-
-    const HendelMArbleMimber = (index, title) => {
-        console.log(title);
-
-        const FilterData = All_Marble_Mimber.filter(item => item.title === title);
-        console.log(FilterData);
-        dispatch(UniqeMarbleMinarAction.UniqeMarbleMinar(FilterData))
-
-    }
     const handleSubMenu = (menu) => {
 
         setOpenSubMenu((prev) => ({
@@ -173,7 +137,9 @@ function NavBar() {
                                             {MinarSize.map((minar, idx) => {
                                                 return (
                                                     <li key={idx}>
-                                                        <NavLink to={`/product/minar/${MinarLink[idx]}-feet`} key={idx} onClick={() => HendelMinarSize(idx, minar)} >{minar}</NavLink>
+                                                        <NavLink to={`/product/minar/${MinarLink[idx]}-feet`} key={idx}
+
+                                                        >{minar}</NavLink>
                                                     </li>
                                                 )
                                             })}
@@ -203,7 +169,8 @@ function NavBar() {
                                             {Minar_Gallery.map((minar, idx) => {
                                                 return (
                                                     <li key={idx}>
-                                                        <NavLink to={`/product/gallery/${makeSlug(minar)}`} onClick={() => HendelGallery(idx, minar)}>{minar}</NavLink >
+                                                        <NavLink to={`/product/gallery/${makeSlug(minar)}`}
+                                                        >{minar}</NavLink >
 
                                                     </li>
                                                 )
@@ -234,9 +201,8 @@ function NavBar() {
                                                 return (
                                                     <li key={idx}>
                                                         <NavLink
-                                                            //  to={`/product/${makeSlug(minar)}`}
                                                             to={`/product/parapet-jali/${makeSlug(minar)}`}
-                                                            onClick={() => HendelParapet(idx, minar)}>{minar}</NavLink>
+                                                        >{minar}</NavLink>
                                                     </li>
                                                 )
                                             })}
@@ -265,8 +231,9 @@ function NavBar() {
 
                                             {Marble_Minar_and_wuzu_stand.map((minar, idx) => {
                                                 return (
-                                                    <li>
-                                                        <NavLink to={`/product/marble/${makeSlug(minar)}`} onClick={() => HendelMArbleMimber(idx, minar)}>{minar}</NavLink>
+                                                    <li key={idx}>
+                                                        <NavLink to={`/product/marble/${makeSlug(minar)}`}
+                                                        >{minar}</NavLink>
 
                                                     </li>
                                                 )
@@ -287,7 +254,7 @@ function NavBar() {
                             </li>
                             <li>
                                 <NavLink className={s.link} to='/contact' >CONTACT</NavLink>
-                            </li> 
+                            </li>
                         </ul>
                     </div>
                     <div className={s.navbar_btn}>

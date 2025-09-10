@@ -35,7 +35,7 @@ function Gumbad() {
               className='animate__zoomIn animate__animated'
             />
           </div>
-          <div className={`${style.minar_feet_contain} flex animate__fadeInRight animate__animated`}>
+          <div className={`${style.minar_feet_contain} flex animate__zoomIn animate__animated`}>
             <h1>Gumbad</h1>
             <div className='hr'></div>
            

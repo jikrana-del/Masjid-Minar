@@ -11,12 +11,21 @@ import style from '../../../css/Minar.module.css'
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 function Parapet_Jali_Detail() {
-    const Data = useSelector(store => store.UniqeMarbleMinarData);
-    const FinalData = Data && Data.length > 0 ? Data[0] : null;
+    const makeSlug = (title) => {
+        return title
+            .toLowerCase()
+            .replace(/\s+/g, '-')   // spaces → dash
+            .replace(/:/g, '')      // remove colon
+            .replace(/[^a-z0-9-]/g, ''); // सिर्फ letters, numbers, dash रहने दो
+    };
+
+    const All_Marble_Mimber = useSelector(store => store.AllMarbleMinarData)
 
 
     const { name } = useParams();
-
+    const FinalData = All_Marble_Mimber.find(
+        (item) => makeSlug(item.title) === name
+    )
 
     return (
         <section key={FinalData.id}>
@@ -31,11 +40,11 @@ function Parapet_Jali_Detail() {
                 <div className={`${style.minar} flex max-width`}>
                     <div className={style.img_zoom}>
                         <InnerImageZoom
-                            src={FinalData.img}         
+                            src={FinalData.img}
                             zoomSrc={FinalData.img}
-                            zoomPreload={true} 
+                            zoomPreload={true}
                             width='250px'
-                            zoomType="hover"  
+                            zoomType="hover"
                             zoomScale={4}
                             className='animate__zoomIn  animate__animated'
                         />
@@ -62,7 +71,7 @@ function Parapet_Jali_Detail() {
                                             {item.text}
                                         </a>
                                     ) : (
-                                      
+
                                         item.text
 
                                     )}

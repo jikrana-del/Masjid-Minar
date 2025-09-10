@@ -152,7 +152,6 @@
 .minar {
     max-width: 1000px;
     gap: 50px;
-    align-items: flex-start;
     justify-content: space-between;
     line-height: 1.5;
     padding: 20px;

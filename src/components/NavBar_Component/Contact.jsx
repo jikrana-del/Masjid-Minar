@@ -4,7 +4,6 @@ import { FaAngleLeft } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom'
 
 function Contact() {
-  const navigate = useNavigate()
   const [firstNumber, setFirstNumber] = useState(0);
   const [lastNumber, setLastNumber] = useState(0);
   const [secsessMessage, setSecsessMessage] = useState(false);

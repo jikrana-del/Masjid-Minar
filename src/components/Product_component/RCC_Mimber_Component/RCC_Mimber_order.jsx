@@ -1,19 +1,15 @@
 import { useParams } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from '../../../css/Minar.module.css'
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { FileText } from "lucide-react";
 function Marble_Mimber_order() {
-    const SelectedOption = ['Dafault Sorting', 'Sort by popularity', 'Sort by average reting', 'Sort by latest', 'Sort by price: low to high','Sort by price:  high to low'];
-    const dispatch = useDispatch()
 
     const [selectedOption, setSelectedOption] = useState('');
     const RCCImgData = useSelector(store => store.RccMimberImgData);
-    console.log(RCCImgData);
     const [selectedData, setSelectedData] = useState(RCCImgData[0]);
 
     const [blog, setBlog] = useState(false);
