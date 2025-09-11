@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 const itemsList = [
     {
-        id: 0, title: 'RCC Mimber',img:'/parapet_jali_images/rcc-mimber.jpg'
+        id: 0, title: 'RCC Mimber', img: `${import.meta.env.BASE_URL}parapet_jali_images/rcc-mimber.jpg`
         ,
     }
 ]

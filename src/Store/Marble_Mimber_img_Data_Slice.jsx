@@ -3,27 +3,27 @@ const itemsList = [
     {
         id: 0,
         title: 'Marble Mimber',
-        img: '/Marble_mimber_images/marble-mimber.jpg',
+        img: `${import.meta.env.BASE_URL}Marble_mimber_images/marble-mimber.jpg`,
 },
     {
         id: 1,
         title: 'Wuzu Stand',
-        img: '/Marble_mimber_images/harmain-traders-wuzu-stand.jpg',
+        img: `${import.meta.env.BASE_URL}Marble_mimber_images/harmain-traders-wuzu-stand.jpg`,
 },
     {
         id: 2,
         title: 'Masjid-Marble-Mehrab',
-        img: '/Marble_mimber_images/masjid-marble-mehrab.jpg'
+        img: `${import.meta.env.BASE_URL}Marble_mimber_images/masjid-marble-mehrab.jpg`
 },
     {
         id: 3,
         title: 'Marble Jali for Dargah',
-        img: '/Marble_mimber_images/marble-jali-for-dargah.jpg'
+        img: `${import.meta.env.BASE_URL}Marble_mimber_images/marble-jali-for-dargah.jpg`
 },
     {
         id: 4,
         title: 'Marble Qibla and Mimber',
-        img: '/Marble_mimber_images/Marble-Qibla-and-member.jpg',
+        img: `${import.meta.env.BASE_URL}Marble_mimber_images/Marble-Qibla-and-member.jpg`,
 },
 
 ]

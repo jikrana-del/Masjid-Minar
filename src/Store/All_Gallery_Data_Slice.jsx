@@ -14,7 +14,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 0,
             title: 'All Masjid Product',
-            img: '/Gallery_images/All-Masjid-Parts-300x224.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/All-Masjid-Parts-300x224.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>   brings you a complete range of <strong>Masjid Products</strong> under one roof. Since <strong>1983</strong>, we have been manufacturing and supplying ready-made  </>, type: 'text' },
@@ -34,7 +34,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 1,
             title: 'High Quality Minar',
-            img: '/Gallery_images/high-quality-minar-300x230.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/high-quality-minar-300x230.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>   trendy designed <strong> High-Quality Minar </strong>  has gained wide appreciation among our consumers since our inception in <strong>1983</strong>. The offered <strong>RCC Minar </strong> is exclusively designed and constructed under the  <strong>supervision </strong> of our adroit professionals with the help of advanced techniques and pristine quality reinforced concrete cement. This </>, type: 'text' },
@@ -53,7 +53,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 2,
             title: 'Khubsurat Minar',
-            img: '/Gallery_images/khubsurat-minar-300x227.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/khubsurat-minar-300x227.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing  </>, type: 'text' },
@@ -74,7 +74,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 3,
             title: 'Lighting Minar',
-            img: '/Gallery_images/Lighting-Minar-khubsurat-Minar-300x228.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/Lighting-Minar-khubsurat-Minar-300x228.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>   is one of the renowned <strong>manufacturers </strong> of <strong>ready-made </strong>  </>, type: 'text' },
@@ -95,7 +95,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 4,
             title: 'Madni Minar',
-            img: '/Gallery_images/Madani-Minar-300x233.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/Madani-Minar-300x233.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing  </>, type: 'text' },
@@ -116,7 +116,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 5,
             title: 'Makki Minar',
-            img: '/Gallery_images/makki-minar-300x235.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/makki-minar-300x235.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>   is one of the leading manufacturers of  </>, type: 'text' },
@@ -141,7 +141,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 6,
             title: 'Minar Block',
-            img: '/Gallery_images/minar-block.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/minar-block.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing  </>, type: 'text' },
@@ -162,7 +162,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 7,
             title: 'Mosque Minar-Masjid ke Minar',
-            img: '/Gallery_images/mosque-minar-all2-300x151.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/mosque-minar-all2-300x151.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing  </>, type: 'text' },
@@ -183,7 +183,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 8,
             title: 'Shandar Minar',
-            img: '/Gallery_images/Shandar-Minar-300x232.jpg',
+            img: `${import.meta.env.BASE_URL}Gallery_images/Shandar-Minar-300x232.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> have started in <strong> 1983 </strong> , ever since it’s been the quickest growing  </>, type: 'text' },
@@ -202,7 +202,7 @@ export const AllGalleryDataSlice = createSlice({
         {
             id: 9,
             title: 'Strong Minar',
-            img: '/Gallery_images/strong minar.avif',
+            img: `${import.meta.env.BASE_URL}Gallery_images/strong minar.avif`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing  </>, type: 'text' },

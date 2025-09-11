@@ -29,7 +29,7 @@ const Marble_Minar_Img = ['marble-mimber.jpg','harmain-traders-wuzu-stand.jpg','
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.9 }}
               className='animate__animated'>
-              <img src={`/Marble_mimber_images/Marble-Qibla-and-member.jpg`} style={{borderRadius:"10px"}} alt=""/>
+              <img src={`${import.meta.env.BASE_URL}Marble_mimber_images/Marble-Qibla-and-member.jpg`} style={{borderRadius:"10px"}} alt=""/>
 
             </motion.div>
             <motion.div key={ Math.floor() + "-text"}
@@ -52,7 +52,7 @@ const Marble_Minar_Img = ['marble-mimber.jpg','harmain-traders-wuzu-stand.jpg','
                     <NavLink to={`/product/marble/${makeSlug(Marble_Minar_and_wuzu_stand[idx])}`} 
                     >
                       <div className={`${style.contain} flex`} data-aos="fade-up" >
-                        <img src={`/Marble_mimber_images/${img}`} height='100px' alt="" title='Click Me'  />
+                        <img src={`${import.meta.env.BASE_URL}Marble_mimber_images/${img}`} height='100px' alt="" title='Click Me'  />
                         <button>{Marble_Minar_and_wuzu_stand[idx]}</button>
                       </div>
                     </NavLink>

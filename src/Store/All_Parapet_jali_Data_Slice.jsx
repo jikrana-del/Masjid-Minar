@@ -13,7 +13,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 0,
             title: 'Parapet Boundary Wall',
-            img: '/parapet_jali_images/parapet-boundry-wall.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/parapet-boundry-wall.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>   is one of the renowned <strong>manufacturers </strong> quickest growing  </>, type: 'text' },
@@ -34,7 +34,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 1,
             title: 'Shahi Boundary',
-            img: '/parapet_jali_images/masjid-shahi-boundry.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/masjid-shahi-boundry.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> is one of the renowned  <strong>manufactures </strong>quickest growing </> },
@@ -54,7 +54,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 2,
             title: 'Small Parapet-Jali',
-            img: '/parapet_jali_images/parapet-jali1.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/parapet-jali1.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> Being a <strong> client-centric organization</strong>, , we are engaged in offering an excellent quality of <strong>small </strong></> },
@@ -71,7 +71,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 3,
             title: 'Medium Size Parapet Jali',
-            img: '/parapet_jali_images/parapet-jali.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/parapet-jali.jpg`,
             description:
                 [
                     { text: <>since our Establishment in <strong>1983 </strong>, We have offered <strong>Medium Size parapet Boundary Wall.</strong> Available in several designs, finishes, and sizes, this <strong>Boundary Wall </strong>is ideal for fencing the areas around the structures to provide  them with stunning looks. Our talented professionals have designed and constructed this wall with quality assurance cement concrete and creative designs in conformance with overall processes. Additionally, customers can avali this <strong>Medium size parapet Boundary Wall </strong> from us at the most affordable rates.</> }
@@ -80,7 +80,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 4,
             title: 'Parapet-Jali Design:1',
-            img: '/parapet_jali_images/Parapet-jali-Design-01.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/Parapet-jali-Design-01.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  is one of the fastest-growing </> },
@@ -101,7 +101,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 5,
             title: 'Parapet-Jali Design:2',
-            img: '/parapet_jali_images/Parapet-jali-Design-02.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/Parapet-jali-Design-02.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>   is established in  <strong>1983,</strong> , we have offered <strong> Medium Size Parapet Boundary Wall.</strong>  Available in several designs, finishes, and sizes, this <strong> boundary wall</strong>  is ideal for fencing the areas around the structures to provide them with stunning looks. Our talented professionals have designed and constructed this wall with <strong> Quality assurance</strong> cement concrete and creative designs in conformance with overall processes. Additionally, customers can avail this <strong> Medium Size Parapet Boundary Wall </strong> from us at the most affordable rates. We also caterers different products like </> },
@@ -116,7 +116,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 6,
             title: 'Parapet-Jali Design:3',
-            img: '/parapet_jali_images/Parapet-jali-Design-03.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/Parapet-jali-Design-03.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  is one of the fastest-growing </> },
@@ -135,7 +135,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 7,
             title: 'Parapet-Jali Design:4',
-            img: '/parapet_jali_images/Parapet-jali-Design-04.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/Parapet-jali-Design-04.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  is one of the fastest-growing </> },
@@ -153,7 +153,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 8,
             title: 'Parapet-Jali Design:5',
-            img: '/parapet_jali_images/Parapet-jali-Design-05.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/Parapet-jali-Design-05.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> is one of India’s fastest growing </> },
@@ -171,7 +171,7 @@ export const All_parapet_jali_slice = createSlice({
         {
             id: 9,
             title: 'Musalla Tiles',
-            img: '/parapet_jali_images/musalla-tiles.jpg',
+            img: `${import.meta.env.BASE_URL}parapet_jali_images/musalla-tiles.jpg`,
             description:[
                 { text: <> Musalla Tiles available at </>},
                 { text: <span>Harmain Traders. </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },

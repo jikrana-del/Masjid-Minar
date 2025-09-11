@@ -6,7 +6,7 @@ const itemsList = [
     {
         id: 0,
         title: 'Musalla Tiles',
-        img: '/parapet_jali_images/musalla-tiles.jpg',
+        img: `${import.meta.env.BASE_URL}parapet_jali_images/musalla-tiles.jpg`,
     },
     {
         id:1,

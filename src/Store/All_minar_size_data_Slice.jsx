@@ -16,7 +16,7 @@ export const MinarDataSlice = createSlice({
                     id: 0,
                     size: 2,
                     title: '2 FEET MINAR',
-                    img: '/Minar_sizes_images/2-feet-masjid-minar-300x452.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/2-feet-masjid-minar-300x452.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -39,7 +39,7 @@ export const MinarDataSlice = createSlice({
                     id: 1,
                     size: '3-5',
                     title: '3.5 FEET MINAR',
-                    img: '/Minar_sizes_images/3.5-feet-masjid-minar-300x452.jpg',
+                    img: `${import.meta.env.BASE_URL}Minar_sizes_images/3.5-feet-masjid-minar-300x452.jpg`,
                     description: [
                         { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                         { text: <> is one of the renowned manufacturers of </>, type: 'text' },
@@ -64,7 +64,7 @@ export const MinarDataSlice = createSlice({
                     id: 2,
                     size: 5,
                     title: '5 FEET MINAR',
-                    img: '/Minar_sizes_images/5-feet-masjid-minar-300x455.jpg',
+                    img: `${import.meta.env.BASE_URL}Minar_sizes_images/5-feet-masjid-minar-300x455.jpg`,
                     description: [
                         { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                         { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -85,7 +85,7 @@ export const MinarDataSlice = createSlice({
                     id: 3,
                     size: 6,
                     title: '6 FEET MINAR',
-                    img: '/Minar_sizes_images/6-feet-masjid-minar-300x456.jpg',
+                    img: `${import.meta.env.BASE_URL}Minar_sizes_images/6-feet-masjid-minar-300x456.jpg`,
                     description: [
                         { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                         { text: <> is one of the renowned manufacturers of </>, type: 'text' },
@@ -109,7 +109,7 @@ export const MinarDataSlice = createSlice({
                     id: 4,
                     size: 8,
                     title: '8 FEET MINAR',
-                    img: '/Minar_sizes_images/8-feet-masjid-minar-300x451.jpg',
+                    img: `${import.meta.env.BASE_URL}Minar_sizes_images/8-feet-masjid-minar-300x451.jpg`,
                     description: [
                         { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                         { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -132,7 +132,7 @@ export const MinarDataSlice = createSlice({
                     id: 5,
                     size: 11,
                     title: '11 FEET MINAR',
-                    img: '/Minar_sizes_images/11-feet-masjid-minar-300x450.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/11-feet-masjid-minar-300x450.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have manufactured and furnished  <strong> 11 Feet Minar considerably treasured due to its interesting configurations and exquisite looks. These </strong>   </>, type: 'text' },
@@ -151,7 +151,7 @@ export const MinarDataSlice = createSlice({
                     id: 6,
                     size: 12,
                     title: '12 FEET MINAR',
-                    img: '/Minar_sizes_images/12-feet-masjid-minar-300x450.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/12-feet-masjid-minar-300x450.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have manufactured and furnished  <strong>10 , 11, and 12 Feet Minar considerably treasured due to its interesting configurations and exquisite looks. These </strong>   </>, type: 'text' },
@@ -170,7 +170,7 @@ export const MinarDataSlice = createSlice({
                     id: 7,
                     size: 14,
                     title: '14 FEET MINAR',
-                    img: '/Minar_sizes_images/14-feet-masjid-minar-300x450.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/14-feet-masjid-minar-300x450.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -191,7 +191,7 @@ export const MinarDataSlice = createSlice({
                     id: 8,
                     size: 16,
                     title: '16 FEET MINAR',
-                    img: '/Minar_sizes_images/16-feet-masjid-minar-300x451.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/16-feet-masjid-minar-300x451.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> is one of the renowned manufacturers of </>, type: 'text' },
@@ -215,7 +215,7 @@ export const MinarDataSlice = createSlice({
                     id: 9,
                     size: 17,
                     title: '17 FEET MINAR',
-                    img: '/Minar_sizes_images/17-feet-masjid-minar-300x451.jpg',
+                    img: `${import.meta.env.BASE_URL}Minar_sizes_images/17-feet-masjid-minar-300x451.jpg`,
                     description: [
                         { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                         { text: <>  are Professional in manufacturing and supply premium quality  <strong> 17 Feet Minar Manufacturer </strong> unrestricted with us in many designs, colours, and finishes. Our skilful team of professionals designed and constructed these</>, type: 'text' },
@@ -236,7 +236,7 @@ export const MinarDataSlice = createSlice({
                     id: 10,
                     size: 18,
                     title: '18 FEET MINAR',
-                    img: '/Minar_sizes_images/18-feet-masjid-minar-300x454.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/18-feet-masjid-minar-300x454.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> trendy designed  <strong>18 Feet Minar </strong> has gained wide appreciation among our consumers since our inception in  <strong>1983.</strong> The offered  </>, type: 'text' },
@@ -259,7 +259,7 @@ export const MinarDataSlice = createSlice({
                     id: 11,
                     size: '20-5',
                     title: '20.5 FEET MINAR',
-                    img: '/Minar_sizes_images/20-feet-masjid-minar-300x452.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/20-feet-masjid-minar-300x452.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -283,7 +283,7 @@ export const MinarDataSlice = createSlice({
                     id: 12,
                     size: '22',
                     title: '22 FEET MINAR',
-                    img: '/Minar_sizes_images/22-feet-masjid-minar-300x454.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/22-feet-masjid-minar-300x454.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -308,7 +308,7 @@ export const MinarDataSlice = createSlice({
                     id: 13,
                     size: '23',
                     title: '23 FEET MINAR',
-                    img: '/Minar_sizes_images/23-feet-300x451.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/23-feet-300x451.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -331,7 +331,7 @@ export const MinarDataSlice = createSlice({
                     id: 14,
                     size: '25',
                     title: '25 FEET MINAR',
-                    img: '/Minar_sizes_images/25-feet-aman-masjid-minar-300x453.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/25-feet-aman-masjid-minar-300x453.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -355,7 +355,7 @@ export const MinarDataSlice = createSlice({
                     id: 15,
                     size: '28',
                     title: '28 FEET MINAR',
-                    img: '/Minar_sizes_images/28-feet-aman-masjid-minar-300x452.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/28-feet-aman-masjid-minar-300x452.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -378,7 +378,7 @@ export const MinarDataSlice = createSlice({
                     id: 16,
                     size: '30',
                     title: '30 FEET MINAR',
-                    img: '/Minar_sizes_images/30-feet-aman-masjid-minar-300x454.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/30-feet-aman-masjid-minar-300x454.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>  have been the quickest growing   </>, type: 'text' },
@@ -401,7 +401,7 @@ export const MinarDataSlice = createSlice({
                     id: 17,
                     size: '32',
                     title: '32 FEET MINAR',
-                    img: '/Minar_sizes_images/32-feet-300x452.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/32-feet-300x452.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> trendy designed  <strong>32 Feet Minar </strong> has gained wide appreciation among our consumers since our inception in  <strong>1983.</strong> The offered  </>, type: 'text' },
@@ -424,7 +424,7 @@ export const MinarDataSlice = createSlice({
                     id: 18,
                     size: '35',
                     title: '35 FEET MINAR',
-                    img: '/Minar_sizes_images/35-feet-300x449.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/35-feet-300x449.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type:'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text:     <> trendy designed  <strong>35 Feet Minar </strong> has gained wide appreciation among our consumers since our inception in  <strong>1983.</strong> The offered  </>,  type: 'text' },
@@ -448,7 +448,7 @@ export const MinarDataSlice = createSlice({
                     id: 19,
                     size: '40',
                     title: '40 FEET MINAR',
-                    img: '/Minar_sizes_images/40-feet-300x454.jpg',
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/40-feet-300x454.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: ' are one of the renowned manufacturers of ' },
@@ -493,7 +493,7 @@ export const MinarDataSlice = createSlice({
             id: 21,
             size: '44',
             title: '44 FEET MINAR',
-            img: `${import.meta.env.BASE_URL} Minar_sizes_images/44-feet-aman-masjid-minar-300x454 (1).jpg`,
+            img: `${import.meta.env.BASE_URL}Minar_sizes_images/44-feet-aman-masjid-minar-300x454 (1).jpg`,
             description: [
                 {
                     text:
@@ -517,7 +517,7 @@ export const MinarDataSlice = createSlice({
             ]
         },
         {
-            id: 22,
+            id: 123,
             size: '60',
             title: '60 FEET MINAR',
             img: `${import.meta.env.BASE_URL}Minar_sizes_images/60-feet-300x458 (1).jpg`,

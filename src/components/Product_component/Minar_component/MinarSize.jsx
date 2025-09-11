@@ -10,7 +10,6 @@ import { ChevronRight } from "lucide-react";
  function FEET_2() {
     const { feet } = useParams();
     const allMinarData = useSelector((store) => store.AllMinarData);
-
     const cleanFeet  = feet.replace('-feet','') 
      const FinalData = allMinarData.find(item => item.size.toString() === cleanFeet);
     

@@ -13,7 +13,7 @@ export const All_Marble_Minar_Slice = createSlice({
         {
             id: 0,
             title: 'Marble Mimber',
-            img: '/Marble_mimber_images/marble-mimber.jpg',
+            img: `${import.meta.env.BASE_URL}Marble_mimber_images/marble-mimber.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <strong>  have been the quickest growing, Consumer-centric, and   </strong>, type: 'text' },
@@ -32,7 +32,7 @@ export const All_Marble_Minar_Slice = createSlice({
         {
             id: 1,
             title: 'Wuzu Stand',
-            img: '/Marble_mimber_images/harmain-traders-wuzu-stand.jpg',
+            img: `${import.meta.env.BASE_URL}Marble_mimber_images/harmain-traders-wuzu-stand.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>have been the quickest growing prominent <strong>manufacturers </strong> and <strong>suppliers</strong>, we make use of the superior quality material for designing, we are providing a wide range of <strong>Wuzu Stand </strong> to our clients. We are now an </>, type: 'text' },
@@ -49,7 +49,7 @@ export const All_Marble_Minar_Slice = createSlice({
         {
             id: 2,
             title: 'Masjid-Marble-Mehrab',
-            img: '/Marble_mimber_images/masjid-marble-mehrab.jpg',
+            img: `${import.meta.env.BASE_URL}Marble_mimber_images/masjid-marble-mehrab.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <>have provided a wide range of <strong>Wuzu Stand </strong> to our clients. We are now an </>, type: 'text' },
@@ -66,7 +66,7 @@ export const All_Marble_Minar_Slice = createSlice({
         {
             id: 3,
             title: 'Marble Jali for Dargah',
-            img: '/Marble_mimber_images/marble-jali-for-dargah.jpg',
+            img: `${import.meta.env.BASE_URL}Marble_mimber_images/marble-jali-for-dargah.jpg`,
             description: [
                 { text: <span>Harmain Traders </span>, type: 'span', Link: 'https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local' },
                 { text: <> is one of the renowned manufacturers quickest growing </>, type: 'text' },
@@ -85,7 +85,7 @@ export const All_Marble_Minar_Slice = createSlice({
         {
             id: 4,
             title: 'Marble Qibla and Mimber',
-            img: '/Marble_mimber_images/Marble-Qibla-and-member.jpg',
+            img: `${import.meta.env.BASE_URL}Marble_mimber_images/Marble-Qibla-and-member.jpg`,
             description: [
                 {
                     text:
