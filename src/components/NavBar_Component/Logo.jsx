@@ -107,17 +107,16 @@ function Logo() {
         {/* gumbad section */}
         <section className={`${style.contain_section} flex max-width  `} style={{ color: "black" }}>
           <div data-aos="fade-up">
-            <img src={`/Hero_images/hero-2.png`} alt="Gumbad" />
+            <img src={`${import.meta.env.BASE_URL}Hero_images/hero-2.png`} alt="Gumbad" />
           </div>
           <div className={`${style.inner_contain} flex`}>
             <h1>Leading RCC Minar <span>Manufactu</span>rer.</h1>
             <p> <NavLink to='/category/:blog'> <span>Harmain  Pecast Industries</span></NavLink> is a leading RCC Minar Manufacturer, Provide Readymade Masjid Minar, <NavLink to='/products-masjid-minar'> <span>RCC Minar </span></NavLink> all over India including Gujarat and Maharashtra. Harmain Minar having its presence in RCC Minar construction and concrete minar product Manufacturing was established in 1983 by concrete technologists with a mission to provide environment friendly, <br /> <br />
-              Our Main Goal is to provide Good Quality and Strong      <NavLink to='/products-masjid-minar'> <span>RCC Masjid Minar </span> </NavLink> and Rcc construction services and concrete products Our Focuse is to provide High Quality and Good Finishing material and ensure timely completion of project.
+              Our Main Goal is to provide Good Quality and Strong <NavLink to='/products-masjid-minar'> <span>RCC Masjid Minar </span> </NavLink> and Rcc construction services and concrete products Our Focuse is to provide High Quality and Good Finishing material and ensure timely completion of project.
             </p>
             <button className={`${style.about_btn} green_btn flex`}> <span>Read More About Company</span>
               <span> <ChevronRight size={20} className='btn_show  btn_high' /></span>
             </button>
-
           </div>
         </section>
         {/* products section */}
@@ -129,7 +128,6 @@ function Logo() {
                 <span >View All Products</span>
                 <span> <ChevronRight size={20} className=' btn_show  btn_high' /></span>
               </button></NavLink>
-
             </div>
             <p>We are the Best RCC Minar Manufacturer, Readymade Masjid Minar , RCC Mimber, Marble Mimber and Wuzu Stand , Parapet Boundry Wall, etc.</p>
           </div>
@@ -137,7 +135,7 @@ function Logo() {
             {ProductS_Card_Images.map((card, idx) => {
               return <div key={idx}>
                 <div data-aos="fade-up">
-                  <img src={`/Hero_images/${card}`} alt="" />
+                  <img src={`${import.meta.env.BASE_URL}Hero_images/${card}`} alt="" />
                 </div>
 
               </div>

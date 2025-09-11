@@ -5,16 +5,16 @@ import 'aos/dist/aos.css'
 function Parapet_jali() {
   const Parapet_Jali_Img = ['parapet-boundry-wall.jpg', 'masjid-shahi-boundry.jpg', 'parapet-jali1.jpg', 'parapet-jali.jpg', 'Parapet-jali-Design-01.jpg', 'Parapet-jali-Design-02.jpg', 'Parapet-jali-Design-03.jpg', 'Parapet-jali-Design-04.jpg', 'Parapet-jali-Design-05.jpg']
   const Parapet_Jali = ['Parapet Boundary Wall', 'Shahi Boundary', 'Small Parapet-Jali', 'Medium Size Parapet Jali', 'Parapet-Jali Design:1', 'Parapet-Jali Design:2', 'Parapet-Jali Design:3', 'Parapet-Jali Design:4', 'Parapet-Jali Design:5',]
-  
+
 
   const makeSlug = (title) => {
     return title
       .toLowerCase()
-      .replace(/\s+/g, '-')   
-      .replace(/:/g, '')      
-      .replace(/[^a-z0-9-]/g, ''); 
+      .replace(/\s+/g, '-')
+      .replace(/:/g, '')
+      .replace(/[^a-z0-9-]/g, '');
   };
-     
+
   return (
     <>
       <section>
@@ -25,24 +25,24 @@ function Parapet_jali() {
             </div>
             <div className='animate__fadeInRight animate__animated'>
               <h1>Parapet Jali </h1>
-              <p> <a href="https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local"><strong>Harmain Traders </strong> </a> Manufacturing All Type parapet Jali  <NavLink to={`/product/parapet-jali/${makeSlug('Parapet Boundary Wall')}`}    
-               ><strong>Parapet Boundary Wall,</strong> </NavLink> parapet Jali , <NavLink to={`/product/parapet-jali/${makeSlug('Medium Size Parapet Jali')}`}
-                > <strong>Medium size parapet Jali </strong> </NavLink> , <NavLink to={`/product/parapet-jali/${makeSlug('Small Parapet-Jali')}`} 
-                ><strong>Small parapet Jali</strong></NavLink>. The parapet Jali is very effective and made for use in mosquse and other pleases.</p>
-            <NavLink to='/contact'>
+              <p> <a href="https://www.google.com/search?output=search&q=HARMAIN+PRECAST+INDUSTRIES+-+Masjid+Minar+%26+RCC+Minar+for+Masjid&ludocid=4372215395066124072&gsas=1&client=ms-android-oneplus&lsig=AB86z5VmLQhhIC4TnCt9__ybbUe-&kgs=d982538cffd756cd&shndl=-1&source=sh/x/kp/local/2&entrypoint=sh/x/kp/local"><strong>Harmain Traders </strong> </a> Manufacturing All Type parapet Jali  <NavLink to={`/product/parapet-jali/${makeSlug('Parapet Boundary Wall')}`}
+              ><strong>Parapet Boundary Wall,</strong> </NavLink> parapet Jali , <NavLink to={`/product/parapet-jali/${makeSlug('Medium Size Parapet Jali')}`}
+              > <strong>Medium size parapet Jali </strong> </NavLink> , <NavLink to={`/product/parapet-jali/${makeSlug('Small Parapet-Jali')}`}
+              ><strong>Small parapet Jali</strong></NavLink>. The parapet Jali is very effective and made for use in mosquse and other pleases.</p>
+              <NavLink to='/contact'>
                 <button>Contact - US</button>
-            </NavLink>
-            
+              </NavLink>
+
             </div>
           </div>
         </section>
         <section className={`${style.MinarSizeImg} flex max-width`}>
           {Parapet_Jali_Img.map((img, idx) => {
             return <div key={idx}>
-              <NavLink to={`/product/parapet-jali/${makeSlug(Parapet_Jali[idx])}`} 
+              <NavLink to={`/product/parapet-jali/${makeSlug(Parapet_Jali[idx])}`}
               >
                 <div className={`${style.contain} flex`} data-aos="fade-up" >
-                  <img src={`/parapet_jali_images/${img}`} width='100%' alt="" title='Click Me' />
+                  <img src={`${import.meta.env.BASE_URL}parapet_jali_images/${img}`} width='100%' alt="" title='Click Me' />
                   <button>{Parapet_Jali[idx]}</button>
                 </div>
               </NavLink>

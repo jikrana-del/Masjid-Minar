@@ -63,7 +63,8 @@ li {
 
 .work li {
     margin-top: 10px;
-
+padding: 5px;
+    border-radius: 5px;
 }
 
 .work li a {
