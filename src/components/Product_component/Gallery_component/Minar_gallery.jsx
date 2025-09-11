@@ -30,7 +30,7 @@ function Minar_gallery() {
 
       <section className={`${style.gallery_section} flex`}>
         {!blog &&
-          <section style={{ borderRight: "2px solid" }}>
+          <section style={{ borderRight: "2px solid #00000059" }}>
             <p style={{ marginLeft: "90px" }} >
               <NavLink to='/'>Home / </NavLink>
               <span>Minar Gallery</span>

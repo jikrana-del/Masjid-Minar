@@ -26,8 +26,8 @@ function RCC_minar() {
         <div className={`${style.minar} flex max-width`}>
           <div className={style.img_zoom}>
             <InnerImageZoom
-              src={'/parapet_jali_images/rcc-mimber.jpg'}          
-              zoomSrc={'/parapet_jali_images/rcc-mimber.jpg'} 
+              src={`${import.meta.env.BASE_URL}parapet_jali_images/rcc-mimber.jpg`}          
+              zoomSrc={`${import.meta.env.BASE_URL}parapet_jali_images/rcc-mimber.jpg`} 
               zoomPreload={true} 
               width='250px'
               zoomType="hover" 

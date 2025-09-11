@@ -26,8 +26,8 @@ function Musalla_Tiles() {
                 <div className={`${style.minar} flex max-width`}>
                     <div className={style.img_zoom}>
                         <InnerImageZoom
-                            src={'/parapet_jali_images/musalla-tiles.jpg'}         
-                            zoomSrc={'/parapet_jali_images/musalla-tiles.jpg'} 
+                            src={`${import.meta.env.BASE_URL}parapet_jali_images/musalla-tiles.jpg`}         
+                            zoomSrc={`${import.meta.env.BASE_URL}parapet_jali_images/musalla-tiles.jpg`} 
                             zoomPreload={true} 
                             width='250px'
                             zoomType="hover" 
@@ -35,7 +35,7 @@ function Musalla_Tiles() {
                             className='animate__zoomIn animate__animated'
                         />
                     </div>
-                    <div className={`${style.minar_feet_contain} flex animate__fadeInRight animate__animated`}>
+                    <div className={`${style.minar_feet_contain} flex animate__zoomIn animate__animated`}>
                         <h1>Musalla Tiles</h1>
                         <p>
                             Musalla Tiles available at 

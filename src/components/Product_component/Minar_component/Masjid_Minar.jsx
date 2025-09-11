@@ -40,7 +40,7 @@ function Masjid_Minar() {
         <>
             <section className={`${style.gallery_section} flex`}>
                 {!blog &&
-                    <section style={{ borderRight: "2px solid" }}>
+                    <section style={{ borderRight: "2px solid #00000059" }}>
                         <p style={{ marginLeft: "90px" }}>
                             <NavLink to='/'>Home / </NavLink>
                             <span>Minar</span>
@@ -71,7 +71,7 @@ function Masjid_Minar() {
                             <div className={`${style.gallery} flex animate__zoomIn animate__animated`} key={`${Math.random()}`}>
                                 {currentItems.map((item, idx) => {
                                     return <div key={idx}>
-                                        <NavLink to={`${import.meta.env.BASE_URL}product/minar/${item.size}-feet`}
+                                        <NavLink to={`/product/minar/${item.size}-feet`}
                                              >
                                             <div className={`${style.contain} flex`} data-aos="fade-up">
                                                 <img src={item.img} alt="" style={{ borderRadius: "10px", height: "390px", width: "290px" }} />

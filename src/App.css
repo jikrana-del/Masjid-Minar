@@ -34,6 +34,7 @@ button {
 }
 
 .green_btn {
+    background-color: rgba(1, 24, 1, 0.842);
     border: none;
     border-radius: 20px;
     padding: 10px 25px;

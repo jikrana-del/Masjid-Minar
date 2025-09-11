@@ -28,7 +28,7 @@ function Musalla_Tiles_order() {
         <>
             <section className={`${style.gallery_section} flex`}>
                 {!blog &&
-                    <section style={{ borderRight: "2px solid", paddingRight: "30px" }}>
+                    <section style={{ borderRight: "2px solid #00000059", paddingRight: "30px" }}>
                         <p style={{ margin: "15px" }}>
                             <NavLink to='/'>Home / </NavLink>
                             <span>RCC Mimber</span>
